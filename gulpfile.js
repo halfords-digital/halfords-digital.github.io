@@ -5,7 +5,6 @@ var sass = require('gulp-sass');
 var rename = require("gulp-rename");
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
-var sourcemaps = require('gulp-sourcemaps');
 var handlebars = require('gulp-handlebars');
 var declare = require('gulp-declare');
 var uglify = require('gulp-uglify');
@@ -157,9 +156,7 @@ gulp.task('renders-sass', function () {
             path.basename = name;
         }))
         .pipe(gulp.dest('dist/renders'))
-        // .pipe(sourcemaps.init())
         .pipe(cleanCSS())
-        // .pipe(sourcemaps.write())
         .pipe(rename(function (path) {
             name = path.dirname.slice(0, path.dirname.indexOf('package') - 1);
             path.dirname = name;
@@ -271,11 +268,11 @@ gulp.task('copy-node-modules', function () {
         .pipe(gulp.dest('dist/reusable'));
 });
 
-gulp.task('addLoryLicense', ['copy-node-modules'], function () {
+gulp.task('addLoryLicense', function () {
     
 })
 
-gulp.task('addShowdownLicense', ['copy-node-modules'], function () {
+gulp.task('addShowdownLicense', function () {
     
 })
 
