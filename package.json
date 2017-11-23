@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "docker:shell": "docker run -it -p 9100:9100 -p 35729:35729 -p 8080:8080 -v $(pwd):/var/app -w /var/app node:8 bash",
-    "start": "npm install && ./node_modules/.bin/gulp"
+    "docker:shell": "docker run -it -p 9100:9100 -p 35729:35729 -v $(pwd):/var/app -w /var/app node:8 bash",
+    "start": "npm install && ./node_modules/.bin/gulp",
+    "build": "gulp buildAllMin"
   },
   "repository": {
     "type": "git",
