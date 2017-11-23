@@ -30,7 +30,7 @@
         "category": "visualization",
         "default": true,
         "label": "Default Visualization",
-        "uri": "https://dev-solutions.s3.amazonaws.com/ca-frontend-renders/dist/renders/slider/package/visualisation.html"
+        "uri": "https://halfords-digital.github.io/dist/renders/slider/package/visualisation.html"
       }
     ]
   },
