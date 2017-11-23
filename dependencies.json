@@ -34,6 +34,11 @@
     "image",
     "video"
   ],
+  "carousel": [
+    "banner",
+    "image",
+    "video"
+  ],
   "splitBlock": [
     "image",
     "video",
