@@ -31,14 +31,39 @@
             bottom:0;
         }
 
+        .copy-html-button{
+          background: linear-gradient(rgb(45, 171, 249) 5%, rgb(6, 136, 250) 100%) rgb(45, 171, 249);
+          border-radius: 3px;
+          display: inline-block;
+          cursor: pointer;
+          color: rgb(255, 255, 255);
+          font-family: Arial;
+          font-size: 15px;
+          padding: 9px 23px;
+          text-decoration: none;
+          position: absolute;
+          right: 30px;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="js_slider_wrap" style="margin:0 auto;"></div>
+<div id="content-to-copy">
+    <div class="js_slider_wrap" style="margin:0 auto;"></div>
+    <script src="https://halfords-digital.github.io/dist/reusable/lory.min.js"></script>
+    <script src="https://halfords-digital.github.io/dist/renders/slider/package/sliderHelper.js"></script>
+    <script>loryHelpers.initSliders(document.querySelectorAll(".js_slider"));</script>    
+    <link rel="stylesheet" href="https://halfords-digital.github.io/dist/renders/slider/slider.min.css">
+    <link rel="stylesheet" href="https://halfords-digital.github.io/dist/renders/banner/banner.min.css">
+    <link rel="stylesheet" href="https://halfords-digital.github.io/dist/renders/image/image.min.css">
+    <link rel="stylesheet" href="https://halfords-digital.github.io/dist/renders/video/video.min.css">
+</div>
 
-<h1> ~ TEST ~ </h1>
 
+<span class="copy-html-button" onclick="copyToClipboard('#content-to-copy')">COPY HTML</span>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://halfords-digital.github.io/dist/reusable/cms-javascript-sdk.min.js"></script>
 <script src="https://halfords-digital.github.io/dist/reusable/handlebars.min.js"></script>
 <script src="https://halfords-digital.github.io/dist/reusable/utils.js"></script>
@@ -65,6 +90,19 @@
             }
         }
         return false;
+    }
+
+    function copyToClipboard(element) {
+        var $temp = $('<input>');
+        $('body').append($temp);
+        $temp.val($(element).html()).select();
+        document.execCommand('copy');
+        $temp.remove();
+
+        $('.copy-html-button').text('HTML COPIED');
+        setTimeout(function() {
+            $('.copy-html-button').text('COPY HTML');
+        }, 3000);
     }
 
     Handlebars.partials = AmpCa.templates;
