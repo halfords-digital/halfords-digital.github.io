@@ -1,9 +1,9 @@
 var renderTypes = {
-    "blog": "d3598cca-aa8c-4d5e-9c1d-d8606bed5da4",
-    "text": "e8d1864e-99d7-4357-b500-f16768f74136",
+    "blog": "3f6a5662-1998-4cf0-b369-f8ee6a7f0e42",
+    "text": "c6fe6238-4752-47bc-bc5e-3413d0d08d30",
     "link": "7b908316-30d9-409e-8ff7-c23fa8526cfe",
     "video": "f68430dd-4265-44cd-acbf-432e56537ad8",
-    "snippet": "29c72e17-6f40-4e55-bb02-0e5de7e74f66",
+    "snippet": "52a76880-f196-4e4e-9153-a32bcd24015f",
     "promoBanner": "4abaf1ef-79a4-4963-b020-25314ad1cfef",
     "externalBlock": "c0e08561-496e-415c-9858-2c34ec635513",
     "splitBlock": "27a0c147-900d-441b-9273-fe341a4a6729",
