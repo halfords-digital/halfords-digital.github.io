@@ -1,1 +1,1 @@
-./content/stage/slider.build-978.js
+./content/stage/slider.build-980.js
