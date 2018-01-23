@@ -1,1 +1,1 @@
-slider.build-987.js
+./slider.build-987.js
