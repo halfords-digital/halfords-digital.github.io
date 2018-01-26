@@ -1,4 +1,4 @@
-/*!  name:components/slider - version: 1000 */
+/*!  name:components/slider - version: 1001 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
