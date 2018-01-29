@@ -1,4 +1,4 @@
-/*!  name:viz/visualisation - version: 1001 */
+/*!  name:viz/visualisation - version: 1005 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
