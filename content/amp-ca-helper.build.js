@@ -1,4 +1,4 @@
-/*!  name:helpers/amp-ca-helper - version: 1011 */
+/*!  name:helpers/amp-ca-helper - version: 1012 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
