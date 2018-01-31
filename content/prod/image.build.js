@@ -1,4 +1,4 @@
-/*!  name:components/image - version: 1011 */
+/*!  name:components/image - version: 1016 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
