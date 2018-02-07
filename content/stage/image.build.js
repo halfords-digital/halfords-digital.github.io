@@ -1,4 +1,4 @@
-/*!  name:components/image - version: local */
+/*!  name:components/image - STAGE - version: 1022 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

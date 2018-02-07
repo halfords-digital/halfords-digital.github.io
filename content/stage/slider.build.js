@@ -1,4 +1,4 @@
-/*!  name:components/slider - version: local */
+/*!  name:components/slider - STAGE - version: 1022 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
