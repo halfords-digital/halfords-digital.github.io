@@ -1,0 +1,13 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://cdn.halfords-content.com/content/dynamiccontent/vue-slider.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Vue Slider",
+    "description": "A slider, built with Vue.js",
+    "type": "object",
+    "properties": {}
+}
