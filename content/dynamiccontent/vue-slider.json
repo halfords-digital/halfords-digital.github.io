@@ -9,5 +9,67 @@
     "title": "Vue Slider",
     "description": "A slider, built with Vue.js",
     "type": "object",
-    "properties": {}
+    "properties": {
+        "slides": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://cdn.halfords-content.com/content/dynamiccontent/vue-image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "minItems": 1,
+            "maxItems": 8,
+            "title": "Slides",
+            "description": ""
+        },
+        "loop": {
+            "type": "boolean",
+            "title": "Loop slider",
+            "description": ""
+        },
+        "navigationDots": {
+            "type": "boolean",
+            "title": "Navigation Dots",
+            "description": ""
+        },
+        "transitionType": {
+            "type": "string",
+            "enum": [
+                "fade",
+                "slide"
+            ],
+            "title": "Transition type",
+            "description": ""
+        },
+        "speed": {
+            "type": "number",
+            "title": "Transition speed",
+            "description": "in milliseconds"
+        },
+        "_title": {
+            "type": "string",
+            "title": "Title",
+            "minLength": 0,
+            "maxLength": 150
+        }
+    },
+    "propertyOrder": [
+        "_title",
+        "slides",
+        "loop",
+        "navigationDots",
+        "transitionType",
+        "speed"
+    ]
 }
