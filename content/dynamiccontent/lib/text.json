@@ -1,0 +1,30 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://cdn.halfords-content.com/content/dynamiccontent/lib/text.json",
+    "title": "Text",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "region": {
+            "type": "string",
+            "enum": [
+                "uk",
+                "ie"
+            ],
+            "title": "Region",
+            "description": ""
+        },
+        "text": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 6000,
+            "title": "Text",
+            "description": "",
+            "format": "markdown"
+        }
+    },
+    "propertyOrder": [
+        "region",
+        "text"
+    ]
+}
